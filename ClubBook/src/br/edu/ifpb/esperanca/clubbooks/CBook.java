@@ -25,5 +25,7 @@ public interface CBook {
 	public void curtirPost (Usuario usuario, Venda venda);
 	
 	public Comentar comentarPost (Usuario usuario, Venda venda);
-
+	
+	public Venda cadastrarVenda(Usuario comprador, Usuario vendedor, Exemplar exemplar, Double valor);
+	
 }

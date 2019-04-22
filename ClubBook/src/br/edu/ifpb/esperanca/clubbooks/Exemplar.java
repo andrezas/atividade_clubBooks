@@ -12,7 +12,7 @@ public class Exemplar {
 	@Id
 	private Long id;
 	private String estadoFisico;
-	private Double preco;
+
 	
 	@OneToMany
 	private Set<Venda> vendas;
@@ -21,7 +21,6 @@ public class Exemplar {
 		super();
 		this.id = id;
 		this.estadoFisico = estadoFisico;
-		this.preco = preco;
 		this.vendas = vendas;
 	}
 
@@ -41,13 +40,6 @@ public class Exemplar {
 		this.estadoFisico = estadoFisico;
 	}
 
-	public Double getPreco() {
-		return preco;
-	}
-
-	public void setPreco(Double preco) {
-		this.preco = preco;
-	}
 
 	public Set<Venda> getVendas() {
 		return vendas;
@@ -63,7 +55,6 @@ public class Exemplar {
 		int result = 1;
 		result = prime * result + ((estadoFisico == null) ? 0 : estadoFisico.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
-		result = prime * result + ((preco == null) ? 0 : preco.hashCode());
 		result = prime * result + ((vendas == null) ? 0 : vendas.hashCode());
 		return result;
 	}
@@ -86,11 +77,6 @@ public class Exemplar {
 			if (other.id != null)
 				return false;
 		} else if (!id.equals(other.id))
-			return false;
-		if (preco == null) {
-			if (other.preco != null)
-				return false;
-		} else if (!preco.equals(other.preco))
 			return false;
 		if (vendas == null) {
 			if (other.vendas != null)
