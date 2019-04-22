@@ -1,4 +1,4 @@
-package br.edu.ifpb.esperanca.clubbook;
+package br.edu.ifpb.esperanca.clubbooks;
 
 import java.util.Set;
 
@@ -16,14 +16,14 @@ public class Livro {
 	private String titulo;
 	
 	@ManyToMany
-	@JoinColumn(name = "Autor_Livros")
+	@JoinColumn(name = "Livro_Autor")
 	private Set<Autor> autor;
 	
 	@OneToMany
 	private Set<Exemplar> exemplares;
 	
 	@ManyToMany
-	@JoinColumn(name = "Categoria_Livros")
+	@JoinColumn(name = "Livro_Categoria")
 	private Set<Categoria> categoria;
 	
 	public Livro(Long isbn, String titulo, Set<Autor> autor, Set<Exemplar> exemplares, Set<Categoria> categoria) {

@@ -1,4 +1,4 @@
-package br.edu.ifpb.esperanca.clubbook;
+package br.edu.ifpb.esperanca.clubbooks;
 
 import java.sql.Date;
 

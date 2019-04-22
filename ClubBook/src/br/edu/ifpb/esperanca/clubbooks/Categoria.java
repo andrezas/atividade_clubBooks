@@ -1,4 +1,4 @@
-package br.edu.ifpb.esperanca.clubbook;
+package br.edu.ifpb.esperanca.clubbooks;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
