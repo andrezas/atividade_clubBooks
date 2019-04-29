@@ -15,14 +15,6 @@ public class Autor {
 	private String nacionalidade;
 	private String biografia;
 	
-	public Autor(Long id, String nome, Date dataNascimento, String nacionalidade, String biografia) {
-		super();
-		this.id = id;
-		this.nome = nome;
-		this.dataNascimento = dataNascimento;
-		this.nacionalidade = nacionalidade;
-		this.biografia = biografia;
-	}
 	
 	public Long getId() {
 		return id;

@@ -26,14 +26,7 @@ public class Livro {
 	@JoinColumn(name = "Livro_Categoria")
 	private Set<Categoria> categoria;
 	
-	public Livro(Long isbn, String titulo, Set<Autor> autor, Set<Exemplar> exemplares, Set<Categoria> categoria) {
-		super();
-		this.isbn = isbn;
-		this.titulo = titulo;
-		this.autor = autor;
-		this.exemplares = exemplares;
-		this.categoria = categoria;
-	}
+
 
 	public Long getIsbn() {
 		return isbn;

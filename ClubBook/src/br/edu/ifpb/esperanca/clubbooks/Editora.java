@@ -20,15 +20,6 @@ public class Editora {
 	@OneToMany
 	private Set<Livro> livros;
 	
-	public Editora(Long id, String nome, String fundador, Date fundacao, String sede, Set<Livro> livros) {
-		super();
-		this.id = id;
-		this.nome = nome;
-		this.fundador = fundador;
-		this.fundacao = fundacao;
-		this.sede = sede;
-		this.livros = livros;
-	}
 
 	public Long getId() {
 		return id;

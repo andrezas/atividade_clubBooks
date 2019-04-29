@@ -10,11 +10,6 @@ public class Categoria {
 	private Long id;
 	private String genero;
 	
-	public Categoria(Long id, String genero) {
-		super();
-		this.id = id;
-		this.genero = genero;
-	}
 	
 	public Long getId() {
 		return id;

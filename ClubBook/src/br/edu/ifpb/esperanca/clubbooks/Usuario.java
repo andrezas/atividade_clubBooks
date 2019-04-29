@@ -23,18 +23,6 @@ public class Usuario {
 	@OneToMany
 	private Set<Venda> vende;
 	
-	public Usuario(Long id, String nome, String email, String dataNascimento, String endereco, String senha,
-			Set<Venda> compra, Set<Venda> vende) {
-		super();
-		this.id = id;
-		this.nome = nome;
-		this.email = email;
-		this.dataNascimento = dataNascimento;
-		this.endereco = endereco;
-		this.senha = senha;
-		this.compra = compra;
-		this.vende = vende;
-	}
 
 	public Long getId() {
 		return id;

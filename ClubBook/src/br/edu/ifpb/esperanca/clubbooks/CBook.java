@@ -20,7 +20,7 @@ public interface CBook {
 	
 	public void enviarMensagem(Usuario usuario, Usuario usuario2 );
 	
-	public void enviarMensagem(Usuario usuario, Grupo grupo);
+	public void enviarMensagemG(Usuario usuario, Grupo grupo);
 	
 	public void curtirPost (Usuario usuario, Venda venda);
 	
